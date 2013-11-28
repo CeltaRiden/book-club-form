@@ -1,0 +1,92 @@
+.flex-img {
+	width:100%;
+}
+
+
+.media{
+	overflow: hidden;
+	/*reminder to float all around it's children*/
+}
+
+
+.media-img{
+	float: left;
+	margin: 0;
+	border-radius: 50%;
+}
+
+.media-body{
+	display:block;
+	background-color:transparent;
+	padding: 0;
+
+}
+
+.media-body h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: #58585B;
+	padding-bottom: 0.2em;
+}
+
+.media-body p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #58585B;
+}
+
+.media-body a {
+	text-decoration:none;
+}
+
+
+
+.media-title{
+	margin: 0;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.media-img-stacked{
+	float:none;
+	display: block;
+}
+
+@media only screen and (min-width: 25.25em) {
+
+	
+}
+
+
+@media only screen and (min-width: 28em) {
+
+}
+
+@media only screen and (min-width: 38em) and (max-width: 40em) {
+	
+.media-body{
+	overflow: hidden;
+	/*floating will wrap around image if you put overflow 
+	it an image without a fixed width this is a trick*/
+}
+
+.media-img-reversed{
+	float:right;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+.media-img-stacked{
+	float:none;
+	margin: 0 0 20px;
+	display: block;
+}
+.media-body p{
+	width: 50%;
+}
+
+
+@media only screen and (min-width: 40em) and (max-width: 60em) {
+
+}
+

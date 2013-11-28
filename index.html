@@ -5,6 +5,8 @@
 <title>Forms</title>
 <link href="css/general.css" rel="stylesheet">
 <link href="css/icons.css" rel="stylesheet">
+<link href="css/media-object.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,7 +17,7 @@
 
             <div class="header-top">
                 <div class="bookstachelogo">
-                    <h1><a href="{{site.baseurl}}/index.html"><img src="{{site.baseurl}}/img/svg/thebookstachelogo.svg" class="logo-img" alt="Book Stache Logo"></a></h1>
+                    <h1><img src="img/thebookstachelogo.svg" class="logo-img" alt="Book Stache Logo"></h1>
                 </div>
                 
                 <div role="complimentary" class="social-media">
@@ -47,7 +49,7 @@
 
     <form>
        
-        <div>
+        <div class"field">
             <label for="name">
             Name
             <strong class="error"> Please fill in your name</strong>
@@ -56,27 +58,27 @@
          </div>
         
         
-        <div>
+        <div class"field">
             <label for="email">E-mail</label>
             <input type="email" id="email"  class="input-text" maxlength="256">
          </div>
 
-        <div>
+        <div class"field">
             <label for="phone">Phone</label>
             <input type="number" id="phone"  pattern="[0-9]*">
          </div>
        
-        <div>
+        <div class"field">
             <label for="address">Address</label>
             <input type="text" id="address" class="input-text" required>
          </div>
 
-         <div>
+         <div class"field">
             <label for="city">City</label>
             <input type="text" id="city" class="input-text" required>
          </div>
 
-         <div>
+         <div class"field">
             <label for="province">Province</label>
             <select id="province">
             <option>Ontario</option>
@@ -92,27 +94,27 @@
             <option selected>CHOOSE OR ELSE</option>
         </div>
 
-        <div>
+        <div class"field">
             <label for="postalcode">Postal Code</label>
             <input type="numbers" id="numbers" maxlength="256" required>
          </div>
 
-         <div>
+         <div class"field">
             <label for="time">What time of day would be best to meet?</label>
             <input type="time" id="numbers" required>
          </div>
 
-         <div>
+         <div class"field">
             <label for="books">How many books have you read this year?</label>
             <input type="number" id="books" pattern="[0-9]*">
          </div>
 
-          <div>
+          <div class"field">
             <label for="address">How much do you love this genre?</label>
             <input type="text" id="address" class="input-text" required>
          </div>
 
-           <div>
+           <div class"field">
             <label for="why"> Describe your favourite book and author</label>
             <textarea id="why" class="input-text"></textarea>    
          </div> 
@@ -145,8 +147,7 @@
 
     <footer role="contentinfo">
             
-            <p>The information on this site is intended for educational purposes only and is 
-            not a substitute for the advice of a qualified healthcare professional. &copy; 2013 Celta Riden Designs.</p>
+            <p> &copy; 2013 Celta Riden Designs.</p>
             
         </footer>
     
