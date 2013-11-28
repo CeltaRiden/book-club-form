@@ -1,15 +1,54 @@
-@charset "UTF-8";
-/* CSS Document */
+* {
+	-moz-box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+	margin:0;
+	padding:0;
+}
 
 html {
-	font-family:Helvetica, Arial, sans-serf;
-}
-* {
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	boxsizing:border-box;
+	font: normal 100%/1.4 Helvetica, Arial, sans-serif;
 }
 
+body {
+	background-color:#F0F0F0;
+	border-top: solid #3EA755 25px;
+
+}
+
+
+.header-top {
+	overflow: hidden;
+	margin-top: -1.5em
+}
+
+.herbs-logo {
+	text-align: center;
+	overflow: hidden;
+}
+
+.logo-img {
+	width: 60%;
+	max-width: 340px;
+	overflow: hidden;
+}
+
+
+.social-media {
+	text-align:center;
+	background-color:transparent;	
+}
+
+.social-media ul {
+	display:inline-block;	
+}
+
+.social-media li{
+	margin: 6px;
+}
+
+ 
 label {
 	display:block;
 	cursor:pointer;
@@ -56,3 +95,41 @@ button {
 .input-error {
 	border:3px solid #f33;
 }
+
+
+
+
+.list-group{
+	padding-left: 0;
+	list-style-type: none;
+}
+
+.list-group-item{
+	display:block;
+}
+
+.list-group-item-inline{
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
