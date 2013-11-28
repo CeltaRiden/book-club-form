@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+<link href="css/general.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <header role="banner">
+
+            <div class="header-top">
+                <div class="bookstache-logo">
+                    <h1><a href="{{site.baseurl}}/index.html"><img src="{{site.baseurl}}/img/bookstachelogo.svg" class="logo-img" alt="Book Stache Logo"></a></h1>
+                </div>
+                
+                <div role="complimentary" class="social-media">
+                    <ul>
+                        <li class="list-group-item list-group-item-inline">
+                            <a href="#" class="icon i-32 i-twitter image-replacement">
+                                Twitter
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item list-group-item-inline">
+                            <a href="#" class="icon i-32 i-facebook image-replacement">
+                                Facebook
+                            </a>
+                        </li>
+                        
+                        <li class="list-group-item list-group-item-inline">
+                            <a href="#" class="icon i-32 i-pinterest image-replacement">
+                                Pinterest
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </header>
+
+
+    <form>
+       
+        <div>
+            <label for="name">
+            Name
+            <strong class="error"> Please fill in your name</strong>
+            </label>
+            <input type="text" id="name" class="input-text input-error" required>
+         </div>
+        
+        
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email"  class="input-text" maxlength="256">
+         </div>
+
+        <div>
+            <label for="phone">Phone</label>
+            <input type="number" id="phone"  pattern="[0-9]*">
+         </div>
+       
+        <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" class="input-text" required>
+         </div>
+
+         <div>
+            <label for="city">City</label>
+            <input type="text" id="city" class="input-text" required>
+         </div>
+
+         <div>
+            <label for="province">Province</label>
+            <select id="province">
+            <option>Ontario</option>
+            <option>Yukon</option>
+            <option>Northwest Territories</option>
+            <option>Alberta<British Columbia/option>
+            <option>Saskatchewan</option>
+            <option>Manitoba</option>
+            <option>Newfoundland</option>
+            <option>New Brunswick</option>
+            <option>Novia Scotia</option>
+            <option>Prince Edward Island</option>
+            <option selected>CHOOSE OR ELSE</option>
+        </div>
+
+        <div>
+            <label for="postalcode">Postal Code</label>
+            <input type="numbers" id="numbers" maxlength="256" required>
+         </div>
+
+         <div>
+            <label for="time">What time of day would be best to meet?</label>
+            <input type="time" id="numbers" required>
+         </div>
+
+         <div>
+            <label for="books">How many books have you read this year?</label>
+            <input type="number" id="books" pattern="[0-9]*">
+         </div>
+
+          <div>
+            <label for="address">How much do you love this genre?</label>
+            <input type="text" id="address" class="input-text" required>
+         </div>
+
+           <div>
+            <label for="why"> Describe your favourite book and author</label>
+            <textarea id="why" class="input-text"></textarea>    
+         </div> 
+
+         
+         <fieldset>
+             <legend>How much do you love this genre?</legend>
+             
+             <input type="radio" id="extreme-good" name="satisfaction">
+             <label for="extreme-good">Absolutly Love</label>
+             
+             <input type="radio" id="bad" name="satisfaction">
+             <label for="good">Like</label>
+             
+             <input type="radio" id="neutral" name="satisfaction">
+             <label for="neutral">Neutral</label>
+            
+             <input type="radio" id="good" name="satisfaction">
+             <label for="bad">Not so much</label>
+             
+             <input type="radio" id="extreme-bad" name="satisfaction">
+             <label for="extreme-bad">Hate it</label>
+
+         </fieldset> 
+         
+         
+         <button type="submit">Send!</button>     
+    </form>
+    
+
+    <footer role="contentinfo">
+            
+            <p>The information on this site is intended for educational purposes only and is 
+            not a substitute for the advice of a qualified healthcare professional. &copy; 2013 Celta Riden Designs.</p>
+            
+        </footer>
+    
+</body>
+</html>
